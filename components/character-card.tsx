@@ -10,7 +10,7 @@ export function CharacterCard() {
   const { t } = useTranslation()
 
   return (
-    <Card className="h-full shadow-md hover:shadow-lg transition-shadow duration-300">
+    <Card className="shadow-md hover:shadow-lg transition-shadow duration-300">
       <CardHeader className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-center">
         <CardTitle className="text-2xl font-bold">Astricia</CardTitle>
       </CardHeader>
@@ -71,7 +71,7 @@ export function CharacterCard() {
           <span className="font-medium">{t("character.signature")}:</span>
           <div className="mt-2 rounded-md overflow-hidden border border-gray-200 dark:border-gray-800">
             <Image
-              src="/placeholder.svg?height=100&width=250"
+              src="https://www.astricia.de/source/%E7%AD%BE%E5%90%8D.png?height=170&width=59.66"
               alt={t("character.signatureAlt")}
               width={250}
               height={100}
