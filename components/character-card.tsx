@@ -71,7 +71,7 @@ export function CharacterCard() {
           <span className="font-medium">{t("character.signature")}:</span>
           <div className="mt-2 rounded-md overflow-hidden border border-gray-200 dark:border-gray-800">
             <Image
-              src="https://www.astricia.de/source/%E7%AD%BE%E5%90%8D.png?height=170&width=59.66"
+              src="https://github.com/YiniRuohong/astricia/blob/main/source/%E7%AD%BE%E5%90%8D.png?raw=true?height=170&width=59.66"
               alt={t("character.signatureAlt")}
               width={250}
               height={100}
