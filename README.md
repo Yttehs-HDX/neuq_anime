@@ -9,7 +9,7 @@
 - TypeScript
 - Tailwind CSS
 - Radix UI
-- v0.dev（自动同步部署）
+ - astricia.dev（自动同步部署）
 - Vercel
 
 ## 主要功能

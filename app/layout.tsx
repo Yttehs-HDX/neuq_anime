@@ -3,9 +3,9 @@ import './globals.css'
 import { Providers } from '@/components/providers'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Astricia',
+  description: 'Created with Astricia',
+  generator: 'astricia.dev',
 }
 
 export default function RootLayout({
