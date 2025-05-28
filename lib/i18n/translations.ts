@@ -1,5 +1,11 @@
 export const translations = {
   en: {
+    map: {
+      enterPage: "Enter Map",
+      backHome: "Back to Home",
+      fullscreen: "Fullscreen",
+      exitFullscreen: "Exit Fullscreen",
+    },
     character: {
       traits: {
         beastEars: "Beast Ears",
@@ -27,6 +33,8 @@ export const translations = {
       title: "Photo Gallery",
       casual: "Casual Outfit",
       winter: "Winter Outfit",
+      withCloak: "With Cloak",
+      withoutCloak: "Without Cloak",
       casualTitle: "Everyday Attire",
       casualDescription: "Astricia's favorite everyday outfit, perfect for magic studies.",
       casualAlt: "Astricia in casual outfit",
@@ -46,6 +54,12 @@ export const translations = {
     },
   },
   zh: {
+    map: {
+      enterPage: "进入地图页面",
+      backHome: "返回首页",
+      fullscreen: "全屏",
+      exitFullscreen: "退出全屏",
+    },
     character: {
       traits: {
         beastEars: "兽耳",
@@ -73,6 +87,8 @@ export const translations = {
       title: "相册展示",
       casual: "常服",
       winter: "冬装",
+      withCloak: "有披风",
+      withoutCloak: "无披风",
       casualTitle: "日常装扮",
       casualDescription: "Astricia最喜欢的日常服装，非常适合魔法学习。",
       casualAlt: "Astricia的常服展示",
@@ -92,6 +108,12 @@ export const translations = {
     },
   },
   ja: {
+    map: {
+      enterPage: "地図を開く",
+      backHome: "ホームへ戻る",
+      fullscreen: "全画面",
+      exitFullscreen: "全画面終了",
+    },
     character: {
       traits: {
         beastEars: "獣耳",
@@ -119,6 +141,8 @@ export const translations = {
       title: "フォトギャラリー",
       casual: "カジュアル服",
       winter: "冬服",
+      withCloak: "マントあり",
+      withoutCloak: "マントなし",
       casualTitle: "普段着",
       casualDescription: "Astriciaのお気に入りの普段着、魔法の勉強に最適。",
       casualAlt: "カジュアル服のAstricia",

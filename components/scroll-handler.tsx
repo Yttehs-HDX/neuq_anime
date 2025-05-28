@@ -61,6 +61,6 @@ export function ScrollHandler() {
 // 为 window 对象添加类型定义
 declare global {
   interface Window {
-    markButtonScroll: () => void
+    markButtonScroll?: () => void
   }
 }
