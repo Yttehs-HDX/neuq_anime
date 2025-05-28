@@ -1,30 +1,44 @@
-# Modern character page
+# Astricia Pages React
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+一个基于 Next.js、React 和 Tailwind CSS 构建的角色页面示例，支持多语言、地图、画廊等功能。
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/vercelsakurabloges-projects/v0-modern-character-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/hYwEOtNQb9h)
+## 技术栈
 
-## Overview
+- Next.js 15.x
+- React 19.x
+- TypeScript
+- Tailwind CSS
+- Radix UI
+- v0.dev（自动同步部署）
+- Vercel
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 主要功能
 
-## Deployment
+- 响应式布局
+- 主题切换（暗色/亮色模式）
+- i18n 多语言支持
+- 图片画廊、照片集
+- 沉浸式地图
+- 角色卡片展示
 
-Your project is live at:
+## 本地运行
 
-**[https://vercel.com/vercelsakurabloges-projects/v0-modern-character-page](https://vercel.com/vercelsakurabloges-projects/v0-modern-character-page)**
+```bash
+pnpm install
+pnpm dev
+```
 
-## Build your app
+访问 http://localhost:3000
 
-Continue building your app on:
+## 构建与部署
 
-**[https://v0.dev/chat/projects/hYwEOtNQb9h](https://v0.dev/chat/projects/hYwEOtNQb9h)**
+```bash
+pnpm build
+pnpm start
+```
 
-## How It Works
+已部署于 Vercel: https://astricia.de
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## 关于女儿角色
+
+至于为什么有我女儿这个角色呢，大概是我从小就对剑与魔法的世界充满了幻想和憧憬吧。到了高中中二的年龄，加上住在学校有着充足的（摸鱼）时间，所以就有了这个角色，也有了围绕这个角色所产生的一系列故事。这些故事体现着高中生活中的点点滴滴，也体现着脱离生活的无穷幻想。我并不期望她与她的故事能有多么的人尽皆知或怎么样，但是我仍然想在互联网的小小角落，为我可爱的女儿以及她所承载的三年青春留下轻轻的记号。
