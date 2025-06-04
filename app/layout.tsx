@@ -3,8 +3,8 @@ import './globals.css'
 import { Providers } from '@/components/providers'
 
 export const metadata: Metadata = {
-  title: 'Astricia',
-  description: 'Created with Astricia',
+  title: '火占术社娘',
+  description: 'Created with 火占术社娘',
   generator: 'astricia.dev',
 }
 

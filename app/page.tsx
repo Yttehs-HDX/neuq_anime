@@ -17,7 +17,6 @@ import { ScrollIndicator } from "@/components/scroll-indicator"
 import { ScrollHandler } from "@/components/scroll-handler"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { BackToTopButton } from "@/components/back-to-top-button"
-import { MapEntryButton } from "@/components/map-entry-button"
 
 export default function Home() {
   return <Providers>
@@ -43,9 +42,7 @@ export default function Home() {
             </Suspense>
           </div>
           {/* Row 2, Col 1 */}
-          <div className="lg:col-span-1">
-            <MapEntryButton />
-          </div>
+          <div className="lg:col-span-1" />
           {/* Row 2, Col 2–3 */}
           <div className="lg:col-span-2">
             <div className="mb-16">
