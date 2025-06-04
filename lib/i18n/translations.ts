@@ -1,11 +1,5 @@
 export const translations = {
   en: {
-    map: {
-      enterPage: "Enter Map",
-      backHome: "Back to Home",
-      fullscreen: "Fullscreen",
-      exitFullscreen: "Exit Fullscreen",
-    },
     character: {
       traits: {
         beastEars: "Beast Ears",
@@ -43,9 +37,9 @@ export const translations = {
       winterAlt: "Astricia in winter outfit",
     },
     author: {
-      name: "Creator",
+      name: "火占术动漫社",
       description: "Character designer & illustrator",
-      blog: "Personal Blog",
+      blog: "Official Site",
     },
     theme: {
       light: "Light",
@@ -54,12 +48,6 @@ export const translations = {
     },
   },
   zh: {
-    map: {
-      enterPage: "进入地图页面",
-      backHome: "返回首页",
-      fullscreen: "全屏",
-      exitFullscreen: "退出全屏",
-    },
     character: {
       traits: {
         beastEars: "兽耳",
@@ -97,9 +85,9 @@ export const translations = {
       winterAlt: "Astricia的冬装展示",
     },
     author: {
-      name: "创作者",
+      name: "火占术动漫社",
       description: "角色设计师 & 插画师",
-      blog: "个人博客",
+      blog: "官方网站",
     },
     theme: {
       light: "亮色",
@@ -108,12 +96,6 @@ export const translations = {
     },
   },
   ja: {
-    map: {
-      enterPage: "地図を開く",
-      backHome: "ホームへ戻る",
-      fullscreen: "全画面",
-      exitFullscreen: "全画面終了",
-    },
     character: {
       traits: {
         beastEars: "獣耳",
@@ -151,9 +133,9 @@ export const translations = {
       winterAlt: "冬服のAstricia",
     },
     author: {
-      name: "クリエイター",
+      name: "火占術動漫社",
       description: "キャラクターデザイナー＆イラストレーター",
-      blog: "個人ブログ",
+      blog: "公式サイト",
     },
     theme: {
       light: "ライト",

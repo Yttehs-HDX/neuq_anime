@@ -15,8 +15,8 @@ export function AuthorInfo() {
       <CardContent className="p-6">
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <Avatar className="h-16 w-16 border-2 border-purple-500">
-            <AvatarImage src="https://cdn.sa.net/2024/10/24/Knmr5dXCQFycqDp.jpg?height=64&width=64" alt={t("author.name")} />
-            <AvatarFallback>AU</AvatarFallback>
+            <AvatarImage src="/placeholder-user.jpg" alt={t("author.name")} />
+            <AvatarFallback>FZ</AvatarFallback>
           </Avatar>
 
           <div className="flex-1 text-center sm:text-left">
@@ -26,7 +26,7 @@ export function AuthorInfo() {
 
           <div className="flex gap-2 mt-4 sm:mt-0">
             <Button variant="outline" size="icon" asChild>
-              <Link href="https://blog.atago.moe" target="_blank" aria-label={t("author.blog")}>
+              <Link href="https://neuq-ani.me" target="_blank" aria-label={t("author.blog")}>
                 <Globe className="h-4 w-4" />
               </Link>
             </Button>
