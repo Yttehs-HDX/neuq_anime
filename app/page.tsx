@@ -1,7 +1,6 @@
 "use client"
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-import { CharacterCard } from "@/components/character-card"
 const ImageGallery = dynamic(
   () => import('@/components/image-gallery').then(mod => mod.ImageGallery),
   { ssr: false, loading: () => <div className="h-60 bg-gray-200 animate-pulse rounded-md mb-4" /> }
@@ -13,7 +12,6 @@ const PhotoGallery = dynamic(
   () => import('@/components/photo-gallery').then(mod => mod.PhotoGallery),
   { ssr: false, loading: () => <div className="h-60 bg-gray-200 animate-pulse rounded-md mb-4" /> }
 )
-import { ScrollIndicator } from "@/components/scroll-indicator"
 import { ScrollHandler } from "@/components/scroll-handler"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { BackToTopButton } from "@/components/back-to-top-button"
@@ -28,27 +26,12 @@ export default function Home() {
           <LanguageSwitcher />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-8 items-start">
-          {/* Row 1, Col 1 */}
-          <div className="lg:col-span-1">
-            <Suspense fallback={<div className="h-80 bg-gray-200 animate-pulse rounded-md mb-4" />}>
-              <CharacterCard />
-            </Suspense>
-          </div>
-          {/* Row 1, Col 2–3 */}
-          <div className="lg:col-span-2">
-            <Suspense>
-              <ImageGallery />
-            </Suspense>
-          </div>
-          {/* Row 2, Col 1 */}
-          <div className="lg:col-span-1" />
-          {/* Row 2, Col 2–3 */}
-          <div className="lg:col-span-2">
-            <div className="mb-16">
-              <AuthorInfo />
-            </div>
-          </div>
+        <Suspense>
+          <ImageGallery />
+        </Suspense>
+
+        <div className="mb-16">
+          <AuthorInfo />
         </div>
       </div>
 
