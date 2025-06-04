@@ -15,7 +15,8 @@ export const translations = {
     },
   },
   zh: {
-
+    gallery: {
+      title: "照片画廊",
     },
     author: {
       name: "火占术动漫社",
