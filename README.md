@@ -1,14 +1,16 @@
 # Sisters Pages React
 
+这是东北大学秦皇岛分校火占术动漫社的社娘展示页面。
 一个基于 Next.js、React 和 Tailwind CSS 构建的角色页面示例，支持多语言、地图、画廊等功能。
+在线访问: <https://oc.neuq-ani.me>
 
 ## 技术栈
 
 - Next.js 15.x
 - React 19.x
-- TypeScript
-- Tailwind CSS
-- Radix UI
+- TypeScript 5.x
+- Tailwind CSS 3.x
+- Radix UI 1.x
 - Vercel
 
 ## 主要功能
