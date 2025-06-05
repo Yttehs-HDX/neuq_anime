@@ -25,6 +25,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
+  // Keep <html lang> in sync
+  useEffect(() => {
+    document.documentElement.lang = language
+  }, [language])
+
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang)
     localStorage.setItem("language", lang)
