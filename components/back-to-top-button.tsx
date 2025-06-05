@@ -4,9 +4,11 @@ import { ChevronUp } from "lucide-react"
 import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import { useTranslation } from "@/lib/i18n/use-translation"
 
 export function BackToTopButton() {
   const [visible, setVisible] = useState(false)
+  const { t } = useTranslation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +50,7 @@ export function BackToTopButton() {
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none",
       )}
       onClick={scrollToTop}
-      aria-label="Back to top"
+      aria-label={t("actions.backToTop")}
     >
       <ChevronUp className="h-5 w-5 text-purple-500" />
     </Button>
