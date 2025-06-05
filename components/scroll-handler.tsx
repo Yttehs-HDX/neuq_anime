@@ -1,8 +1,10 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export function ScrollHandler() {
+  const isMobile = useIsMobile()
   // 用于记录是否是通过按钮触发的滚动
   const isButtonScrollRef = useRef(false)
   // 用于记录上一次的滚动位置
@@ -11,6 +13,8 @@ export function ScrollHandler() {
   const hasEnteredGalleryRef = useRef(false)
 
   useEffect(() => {
+    if (isMobile) return
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY
       const windowHeight = window.innerHeight
@@ -36,7 +40,7 @@ export function ScrollHandler() {
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [isMobile])
 
   // 提供一个方法供其他组件调用，标记滚动是由按钮触发的
   useEffect(() => {

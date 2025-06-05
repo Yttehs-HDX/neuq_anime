@@ -2,12 +2,16 @@
 
 import { ChevronDown } from "lucide-react"
 import { useEffect, useState } from "react"
+import { useIsMobile } from "@/hooks/use-mobile"
 import { cn } from "@/lib/utils"
 
 export function ScrollIndicator() {
   const [visible, setVisible] = useState(true)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
+    if (isMobile) return
+
     const handleScroll = () => {
       // 一旦滚动就隐藏指示器
       setVisible(false)
@@ -27,7 +31,7 @@ export function ScrollIndicator() {
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [isMobile])
 
   const scrollToGallery = () => {
     const windowHeight = window.innerHeight
